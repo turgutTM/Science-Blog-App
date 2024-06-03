@@ -20,8 +20,8 @@
 4. [Durum Senaryoları](/durumsenaryoları.md)
 5. ![Veri tabanı Diyagram](/Veritabanidiyagram.png)
 6. [Front-End](/Front-end.md)
-7. [Back-End](/backend.md)
+7. [Back-End](/Back-end.md)
 8. [Test](/test.md)
-9. [Geliştirici ve kullanıcı dökümantasyonları](/gelistirici.md)
+9. [Geliştirici ve kullanıcı dökümantasyonları](/gelistirici-dokumantasyonu.md)
 
 
