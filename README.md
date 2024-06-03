@@ -22,6 +22,6 @@
 6. [Front-End](/Front-end.md)
 7. [Back-End](/Back-end.md)
 8. [Test](/test.md)
-9. [Geliştirici ve kullanıcı dökümantasyonları](/kullanici-dokumantosyunu.md)
+9. [Geliştirici ve kullanıcı dökümantasyonları](/gelistirici-dokumantosyunu.md)
 
 
