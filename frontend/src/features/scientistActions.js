@@ -2,7 +2,7 @@ import axios from "axios";
 import { addScientist, setScientists } from "./scientistSlice";
 import { useDispatch } from "react-redux";
 
-const BASE_URL = "http://localhost:5100/api";
+const BASE_URL = "https://science-2.vercel.app/api";
 
 const getAllScientists = async () => {
   const { data } = await axios.get(`${BASE_URL}/scientists`);
@@ -65,10 +65,18 @@ const updateScientist = async (scientist) => {
   } catch (error) {
     console.log(error);
   }
-  const { data } = await axios.patch(`${BASE_URL}/scientists/${scientist.id}`, newScientist);
+  const { data } = await axios.patch(
+    `${BASE_URL}/scientists/${scientist.id}`,
+    newScientist
+  );
 
   console.log(data);
   return data.post;
 };
 
-export { getAllScientists, createScientist, deleteScientistAction, updateScientist };
+export {
+  getAllScientists,
+  createScientist,
+  deleteScientistAction,
+  updateScientist,
+};

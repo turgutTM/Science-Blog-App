@@ -23,7 +23,7 @@ const Scientist = () => {
     const fetchScientistData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5100/api/scientists/${id}`
+          `https://science-2.vercel.app/api/scientists/${id}`
         );
         setScientistData(response.data);
       } catch (error) {
@@ -37,9 +37,12 @@ const Scientist = () => {
   const handleAddToCart = async () => {
     if (currentUser._id) {
       dispatch(toggleFavoriteScientist({ scientistId: id }));
-      await axios.post(`http://localhost:5100/api/scientists/${id}/favorite`, {
-        userId: currentUser._id,
-      });
+      await axios.post(
+        `https://science-2.vercel.app/api/scientists/${id}/favorite`,
+        {
+          userId: currentUser._id,
+        }
+      );
     } else {
       toast.error("Please log in to add this scientist to favorites.");
     }
@@ -47,10 +50,13 @@ const Scientist = () => {
 
   const handleRating = async (rating) => {
     if (currentUser._id) {
-      await axios.post(`http://localhost:5100/api/scientists/${id}/rate`, {
-        userId: currentUser._id,
-        rating,
-      });
+      await axios.post(
+        `https://science-2.vercel.app/api/scientists/${id}/rate`,
+        {
+          userId: currentUser._id,
+          rating,
+        }
+      );
       toast.success(`You rated this article ${rating} stars!`);
     } else {
       toast.error("Please log in to rate this scientist.");

@@ -17,7 +17,7 @@ const Modal = ({ isOpen, toggle }) => {
   const fetchFavoriteScientists = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5100/api/scientists/getallfavoritescientists/${currentUser._id}`
+        `https://science-2.vercel.app/api/scientists/getallfavoritescientists/${currentUser._id}`
       );
       console.log(response);
       setFavoriteScientists(response.data);
