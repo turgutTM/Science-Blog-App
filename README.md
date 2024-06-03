@@ -8,7 +8,7 @@
 **Referans Uygulama:** 
 [Science.org](https://www.science.org/)
 
-**Uygulama Adresi:**
+**Uygulama Adresi:**(https://science-frontend.vercel.app/dashboard)
 
 **Grup Adı:** Tugu
 
