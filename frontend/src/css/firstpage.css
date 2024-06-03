@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.firstpage-container {
+  height: 100vh;
+  background: url("../images/solveyback.png");
+  background-size: cover;
+}
+.main-page {
+}
+
+.main-page-components {
+  padding: 10rem;
+  display: flex;
+  gap: 24rem;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  width: 29rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(120, 120, 233);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-2:hover {
+  background-color: #8098e5;
+}
+
+.button-2:active {
+  background-color: #398439;
+}
+.text-left {
+  color: gray;
+  font-size: 22px;
+}

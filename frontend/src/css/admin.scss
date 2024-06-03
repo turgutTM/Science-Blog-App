@@ -1,0 +1,129 @@
+.admin-container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.admin-title {
+  background: url("../images/solvayconference.jpg");
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.admin-title h1 {
+  margin-top: 2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 23px;
+}
+
+.admin-panel {
+  margin-top: 40px;
+  margin-left: 3rem;
+  width: 24rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.panel-bio form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23rem;
+  padding: 2rem;
+  margin-top: 40px;
+  margin-left: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.panel-bio form .form-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.panel-bio label {
+  color: rgb(65, 64, 64);
+  font-size: 17px;
+}
+
+.panel-bio form input {
+  display: flex;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  padding: 12px 8px;
+  border: 1px solid #b5b4b4;
+  border-radius: 5px;
+}
+
+.panel-bio form button {
+  font-family: Arial, Helvetica, sans-serif;
+	padding: 8px 13px;
+  border: none;
+	font-size: 16px;
+	background-color: #277dff;
+  color: white;
+  border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+
+  &:hover {
+    background-color: #096afb;
+  }
+}
+
+.admin-panel button:hover {
+  background-color: #0056b3;
+}
+
+.panel-bio {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+  gap: 11rem;
+}
+
+.biography-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.biography-add h1 {
+  font-size: 23px;
+}
+
+.quill-container {
+  width: 40rem;
+  height: 300px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,23 @@
+.sidebar-container {
+  width: 5rem;
+  height: 100vh;
+  padding: 20px;
+  border-right: 2px solid rgb(244, 243, 243);
+}
+.sidebar-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar-logo img {
+  max-width: 50px;
+  cursor: pointer;
+}
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+  gap: 7rem;
+  font-size: 1.5rem;
+}

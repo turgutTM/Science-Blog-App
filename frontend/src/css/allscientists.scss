@@ -1,0 +1,146 @@
+.science-container {
+  padding: 3rem;
+  width: 80%;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.science-up-components {
+  display: flex;
+  gap: 20px;
+}
+
+.science-up-components input {
+  padding: 10px;
+  width: 15rem;
+  border: 1px solid #c2c2c2;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+  margin-bottom: 20px;
+
+  &:focus {
+    border-color: #595959;
+  }
+}
+
+.scientists {
+  display: flex;
+}
+
+.science-main-components {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9rem;
+  width: 84rem;
+  margin-top: 40px;
+}
+
+.recom-main {
+  width: 10%;
+}
+
+.not-found {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    height: 70%;
+    width: fit-content;
+  }
+
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.allscientist-components {
+  background-color: rgb(247, 239, 239);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(179, 179, 179);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.allscientist-components img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 4% 4% 0 0;
+}
+
+.allscientist-components:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.allscientist-components:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.icons-edit-delete {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 22px;
+  gap: 40px;
+}
+
+.icons-edit-delete i {
+  transition: transform 0.3s ease;
+}
+
+.icons-edit-delete i:hover {
+  transform: scale(1.4);
+}
+
+.icons-edit-delete i:nth-child(2) {
+  transition: transform 0.3s;
+}
+
+.icons-edit-delete i:nth-child(2):hover {
+  animation: tilt-shaking 0.1s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

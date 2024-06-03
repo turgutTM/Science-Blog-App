@@ -1,0 +1,146 @@
+/* Existing styles */
+.singlescience-container {
+  width: 92%;
+  animation: fadeIn 0.5s ease-out;
+}
+.singlescience-components {
+  height: 100%;
+}
+
+.biography-main {
+  display: flex;
+  margin-top: 20px;
+}
+.header-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 10px;
+  justify-content: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.header-text p {
+  margin-left: 36rem;
+}
+
+.list {
+  display: flex;
+  margin-left: 30rem;
+  font-size: 24px;
+}
+.header-photo {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.header-photo img {
+  height: 340px;
+  border-radius: 12px;
+  margin-right: 80px;
+}
+.biography-field {
+}
+.biography-field-text {
+  width: 47rem;
+  margin-right: 130px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.emotions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.footer span {
+  color: white;
+  display: flex;
+  gap: 70px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.emotions .like-icon {
+  border: 2px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.emotions .like-icon:hover {
+  background-color: blue;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1001;
+  max-width: 500px;
+  width: 90%;
+  height: 27rem;
+  text-align: center;
+}
+
+.listmodal {
+  border: none;
+  font-size: 27px;
+  background: transparent;
+  cursor: pointer;
+}
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating .star {
+  margin-right: 5px;
+  background-color: white;
+}
+
