@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "setup-project": "npm i && cd frontend && npm i",
-    "dev": "nodemon server.js"
+    "dev": "nodemon api/server.js"
   },
   "author": "",
   "license": "ISC",

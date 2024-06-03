@@ -7,8 +7,8 @@ dotenv.config();
 const app = express();
 
 //routers
-import authRouter from "./routes/authRoutes.js";
-import scienceRouter from "./routes/scienceRouter.js";
+import authRouter from "../routes/authRoutes.js";
+import scienceRouter from "../routes/scienceRouter.js";
 
 app.use(express.json());
 app.use(cors());
@@ -25,7 +25,7 @@ myCloudinary.config({
 app.use("/api/scientists/", scienceRouter);
 app.use("/api/auth/", authRouter);
 
-const port = process.env.PORT || 5100;
+const port = process.env.PORT || 5;
 
 try {
   await mongoose.connect(process.env.MONGO_URL);
