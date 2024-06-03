@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "setup-project": "npm i && cd frontend && npm i",
-    "dev": "nodemon api/server.js"
+    "dev": "nodemon api/index.js"
   },
   "author": "",
   "license": "ISC",
