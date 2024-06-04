@@ -13,3 +13,4 @@ Makale Favoriye ekleme,
 [Video linki](https://files.fm/f/nsv4yjxayf)
 
 Makale Favoriye Ekleme
+![Favoriye Ekleme](/addfavori.png)
